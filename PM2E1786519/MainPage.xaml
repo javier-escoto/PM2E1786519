@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E1786519.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="15" CornerRadius="0">
+            <Label Text="Examen PM2E1786519 " HorizontalTextAlignment="Center" TextColor="White" FontSize="12"/>
+        </Frame>
+        <StackLayout>
+            <Image Source="logo.png" 
+                   HeightRequest="80"
+                   HorizontalOptions="Start"
+                   Aspect="Fill"
+                   
+                   />
+            
+            <Label Text="UNIVERSIDAD TECNOLOGICA DE HONDURAS"  TextColor="White" HorizontalOptions="End"
+                  
+                   />
+         </StackLayout>
+
+        
+
+
+        <Label Text="Latitud" FontSize="Small" Padding="0" Margin="0,200,0,0"/>
+        <Entry x:Name="txtlatutud" Placeholder="longitud" Keyboard="Text" Margin="0"  />
+
+        <Label Text="Longitud" FontSize="Small" Padding="0,0,0,0"/>
+        <Entry x:Name="txtlongitud" Placeholder="latitud" Keyboard="Text" Margin="0"  />
+
+        <AbsoluteLayout>
+            <Button Text="Agregar" x:Name="btnagregar"   BackgroundColor="Green" TextColor="White" Margin="5, 30, 50, 50" CornerRadius="20" Padding="10" />
+            <Button Text="Listar sitios" x:Name="btnsitios"  BackgroundColor="Green" TextColor="White" Margin="200, 30, 50, 50" CornerRadius="20" Padding="10" />
+            <Button Text="Salir" x:Name="btnsalir"  BackgroundColor="Green" TextColor="White" Margin="110, 110, 50, 50" CornerRadius="20" Padding="20" />
+        </AbsoluteLayout>
+
+    </StackLayout>
+
+</ContentPage>

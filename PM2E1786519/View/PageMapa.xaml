@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="PM2E1786519.View.PageMapa">
+    <StackLayout>
+
+        <Label IsVisible="false" x:Name="ubicacion" Text="{Binding Ubicacion}"></Label>
+    <Label IsVisible="false" x:Name="ubicacion_corta" Text="{Binding Descripcion_corta}"></Label>
+    <Label IsVisible="false" x:Name="latitud" Text="{Binding Latitud}"></Label>
+    <Label IsVisible="false" x:Name="longitud" Text="{Binding Longitud}"></Label>
+    <Label IsVisible="false" x:Name="id" Text="{Binding Id}"></Label>
+
+    <maps:Map HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="mapa" IsShowingUser="True" />
+
+    </StackLayout>
+
+
+</ContentPage>
